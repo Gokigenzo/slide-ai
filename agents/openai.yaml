@@ -1,0 +1,14 @@
+interface:
+  display_name: Slide bám nguồn
+  short_description: Slide dễ đọc, đúng nguồn, có duyệt dàn ý
+  default_prompt: Use $build-source-grounded-slides to create an editable outline
+    from my sources before producing slides.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
