@@ -76,8 +76,10 @@ class SourceExtractor:
                 line_start = idx
             elif stripped:
                 if stripped.startswith(("-", "*", "•")):
-                    current_points.append(stripped.lstrip("-*• ").strip())
-                elif len(stripped) > 10:
+                    pt = stripped.lstrip("-*• ").strip()
+                    if pt:
+                        current_points.append(pt)
+                elif len(stripped) > 5:
                     current_points.append(stripped)
 
         if current_points:

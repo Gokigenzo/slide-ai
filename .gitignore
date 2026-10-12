@@ -1,0 +1,16 @@
+# Virtual environment & Python cache
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Pipeline build outputs & rendered slides
+renders/
+output/
+*.pptx
+!assets/*.pptx
+render_manifest.json
+
+# Local configurations & secrets
+.env
+*.token
